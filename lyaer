@@ -1,0 +1,10 @@
+# Tiny Tap Writeup
+
+취약점: SSRF
+
+1. https://dreamhack.io/wargame/challenges/2735
+2. 컨테이너 start
+3. logs 확인
+
+flag:
+DH{57e8e65fa0b07d5c90a90d42a25e6aa77b9e0e0627c2cdedfe519ae5288858b3}
