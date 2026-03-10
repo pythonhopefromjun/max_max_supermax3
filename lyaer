@@ -1,10 +1,35 @@
-# Tiny Tap Writeup
+# Dreamhack - Tiny Tap
+https://dreamhack.io/wargame/challenges/2735
+## 취약점
+SSRF
 
-취약점: SSRF
+## 풀이
 
-1. https://dreamhack.io/wargame/challenges/2735
-2. 컨테이너 start
-3. logs 확인
+1. 내부 Docker API 발견
+http://api:2375
 
-flag:
+2. 컨테이너 생성
+POST /containers/create
+
+3. 컨테이너 시작
+POST /containers/<id>/start
+
+4. logs 확인
+
+## Flag
+
 DH{57e8e65fa0b07d5c90a90d42a25e6aa77b9e0e0627c2cdedfe519ae5288858b3}
+---------------------------------------------------------------------------------------------------------------------------
+
+ # CTF Writeups
+
+Dreamhack / CTF 문제 풀이 정리
+
+## Dreamhack
+- Tiny Tap (SSRF)
+
+## Skills
+- Web Hacking
+- SSRF
+- SSTI
+- SQL Injection
